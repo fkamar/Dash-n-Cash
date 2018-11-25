@@ -1,4 +1,6 @@
+total=float(0)
 fuel=float(input("How much fuel does your car use in 1 km?"))
+fuel/=100
 gasprice=float(input("What is the current gas price?"))
 def walk(fuel,gasprice):
     money=distancetravelled*fuel*gasprice
