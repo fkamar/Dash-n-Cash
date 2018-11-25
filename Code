@@ -1,0 +1,19 @@
+fuel=float(input("How much fuel does your car use in 1 km?"))
+gasprice=float(input("What is the current gas price?"))
+def walk(fuel,gasprice):
+    money=distancetravelled*fuel*gasprice
+    return money
+def car(fuel,gasprice):
+    money=distancetravelled*fuel*gasprice
+    return money
+count=0
+while (count<5):
+    distancetravelled= float(input("How many km was your trip?"))
+    modetransport= input("Did you walk or take a car on your trip?")
+    if modetransport=="car":
+        total=total-car(fuel,gasprice)
+        print(total)
+    else:
+        total+=walk(fuel,gasprice)
+        print(total)
+    count+=1
