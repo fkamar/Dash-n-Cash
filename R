@@ -1,0 +1,3 @@
+table=read.table(file.choose(), sep=',', header=TRUE)
+fueleff=table$City.Unadj.FE...Conventional.Fuel[table$Mfr.Name=="Honda"|table$Division=="Honda"]
+print(fueleff[1])
